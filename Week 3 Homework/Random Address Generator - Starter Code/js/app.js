@@ -5,21 +5,33 @@ $(document).ready(function(){
 	var states = ['NY', 'CA', 'TN', 'TX', 'MO'];
 	var cities = ['New York', 'Boulder', 'Santa Monica', 'Los Angeles', 'St. Louis'];
 
+	// function makeRandomNumber( min, max){
+
+		// return  Math.floor( Math.random() * (max - min) + min );
+
+
+	// }
+
 
 	$('button#makeAddress').click(function(){
 
+// console.log( makeRandomNumber ( 5,10 ) );
+
+// return;
 
 	// var doSomething = function(){}
 	// $('button#makeAddress').click( doSomething );
 
 
-		var houseNumber = Math.floor( (Math.random() * 10000) );
-		var zipcode = Math.floor( (Math.random() * 100) );
+		var houseNumber = Math.floor (Math.random() * 1000 );
+		var zipcode = Math.floor( (Math.random() * 100) + 1000);
 
-		var streetsRandom = Math.floor( (Math.random() * streets.length) ) ;
-		var typesRandom = Math.floor( ( Math.random() * types.length) );
-		var statesRandom = Math.floor( ( Math.random() * states.length) );
-		var citiesRandom = Math.floor( ( Math.random() * cities.length) );
+	//var zipcode = ( Math.floor( Math.random() * 89999) + 1000 );
+
+		var streetsRandom = Math.floor( Math.random() * streets.length);
+		var typesRandom = Math.floor( Math.random() * types.length);
+		var statesRandom = Math.floor( Math.random() * states.length);
+		var citiesRandom = Math.floor( Math.random() * cities.length);
 
 
 		var streetName = streets[streetsRandom];		
