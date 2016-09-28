@@ -40,7 +40,7 @@ $(document).ready(function(){
 		var YOURNAME = $('input#yourName').val();
 	
 
-		var nouns = new Array();
+		var texts = new Array();
 
 		texts[0] = 	'Dear ' + COMPANY ':';
 
@@ -58,6 +58,7 @@ $(document).ready(function(){
 
 		texts[7] = YOURNAME;
 
+		
 		$(texts).each(function(index, text){
 
 			$('div.output').append('<p>' + text + '</p>');
