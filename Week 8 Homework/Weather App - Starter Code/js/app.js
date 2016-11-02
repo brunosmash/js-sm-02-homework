@@ -40,13 +40,13 @@ $(document).ready(function(){
 
 		if (response.main.temp > 50) {
 
-			temp = "warm"
-			console.log(temp)
+			temp = "warm";
+			console.log(temp);
 
 		} else {
 
-			temp - "cool"
-			console.log(temp)
+			temp = "cool";
+			console.log(temp);
 		}
 
 		$(".temperature").append("It is currently " + tempDegrees + " degrees and " + temp + " in " + city);
