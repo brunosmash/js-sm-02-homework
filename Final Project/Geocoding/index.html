@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <title>Petfinder Mapper</title>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>Petfinder Mapper</h3>
+
+    <div id="input-panel">
+      <input id="zipCode" type="textbox" value="Enter Zip Here">
+      <input id="submit" type="button" value="Find Pets!">
+    </div>
+    
+    <div id="map"></div>
+    
+    <script type="text/javascript" src="js/app.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9fURjh6G5-teDZm8-CgCyIlHxquXM7WM&callback=initMap">
+    </script>
+  </body>
+</html>
